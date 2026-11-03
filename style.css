@@ -1,0 +1,93 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #080B1D;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    padding: 35px 10px;
+}
+
+header h1 {
+    font-size: 48px;
+    letter-spacing: 8px;
+    color: #A78BFA;
+}
+
+header p {
+    color: #B8B8D5;
+    font-size: 13px;
+}
+
+.status {
+    display: inline-block;
+    margin-top: 15px;
+    color: #70E1B5;
+    font-size: 12px;
+}
+
+.welcome {
+    margin-top: 25px;
+    padding: 25px;
+    border: 1px solid #6545A5;
+    border-radius: 15px;
+    background: #12152D;
+}
+
+.welcome h2 {
+    color: #B69AFF;
+}
+
+.chat {
+    margin-top: 25px;
+    padding: 20px;
+    background: #12152D;
+    border-radius: 15px;
+}
+
+.message {
+    padding: 15px;
+    margin-bottom: 15px;
+    background: #242044;
+    border-radius: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 12px;
+    border: 1px solid #6545A5;
+    border-radius: 8px;
+    background: #080B1D;
+    color: white;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #7953C6;
+    color: white;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 35px;
+    text-align: center;
+    color: #777791;
+    font-size: 12px;
+}
