@@ -1,44 +1,121 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EDEN | AI Assistant</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>EDEN | Personal AI Assistant</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <main class="container">
-        <header>
-            <h1>EDEN</h1>
-            <p>Empowering Discernment through Excellence and Nurture</p>
-            <span class="status">● SYSTEM ONLINE</span>
-        </header>
+    <div class="app-container">
 
-        <section class="welcome">
-            <h2>Good day.</h2>
-            <p>I am EDEN, your personal AI assistant.</p>
-            <p>How may I assist you today?</p>
-        </section>
+        <!-- SIDEBAR -->
+        <aside class="sidebar" id="sidebar">
 
-        <section class="chat">
-            <div class="message">
-                <strong>EDEN:</strong>
-                Welcome. My systems are ready.
+            <div class="brand">
+                <h1>EDEN</h1>
+                <p>Personal Intelligence</p>
             </div>
 
-            <input type="text" id="userInput"
-                placeholder="Message EDEN...">
+            <nav class="navigation">
 
-            <button onclick="sendMessage()">Send</button>
-        </section>
+                <button class="nav-item active"
+                        data-page="dashboard">
+                    <span>⌂</span>
+                    Dashboard
+                </button>
 
-        <footer>
-            <p>EDEN v0.1 | Prototype</p>
-        </footer>
-    </main>
+                <button class="nav-item"
+                        data-page="chat">
+                    <span>◈</span>
+                    Chat
+                </button>
+
+                <button class="nav-item"
+                        data-page="agents">
+                    <span>✧</span>
+                    Agents
+                </button>
+
+                <button class="nav-item"
+                        data-page="memory">
+                    <span>◎</span>
+                    Memory
+                </button>
+
+                <button class="nav-item"
+                        data-page="settings">
+                    <span>⚙</span>
+                    Settings
+                </button>
+
+            </nav>
+
+            <div class="sidebar-footer">
+                <p>EDEN v0.2</p>
+                <p>Empowering Discernment</p>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <button id="menuToggle"
+                        class="menu-toggle"
+                        aria-label="Toggle navigation">
+                    ☰
+                </button>
+
+                <div class="system-status">
+                    <span class="status-dot"></span>
+                    SYSTEM ONLINE
+                </div>
+
+            </header>
+
+
+            <!-- PAGE CONTENT -->
+            <section class="workspace" id="workspace">
+
+                <div class="welcome-card">
+
+                    <p class="eyebrow">
+                        PERSONAL INTELLIGENCE SYSTEM
+                    </p>
+
+                    <h2>Welcome to EDEN.</h2>
+
+                    <p>
+                        Empowering Discernment through
+                        Excellence and Nurture.
+                    </p>
+
+                    <div class="welcome-line"></div>
+
+                    <p class="welcome-message">
+                        Your personal workspace is ready.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
 
     <script src="script.js"></script>
+
 </body>
 </html>
